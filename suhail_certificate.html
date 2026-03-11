@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learner Verification | Muhammed Suhail</title>
+    <style>
+        /* General Reset & Typography */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #333;
+            display: flex;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            width: 260px;
+            min-height: 100vh;
+            border-right: 1px solid #e0e0e0;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .avatar {
+            width: 70px;
+            height: 70px;
+            background-color: #2c3e50;
+            border-radius: 4px;
+            margin: 0 auto 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 40px;
+        }
+
+        .user-name {
+            font-size: 14px;
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 5px;
+        }
+
+        .alison-id-small {
+            font-size: 11px;
+            color: #888;
+            margin-bottom: 15px;
+        }
+
+        .btn-green-side {
+            background-color: #008a52;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        .btn-green-side:hover, .btn-green-main:hover {
+            background-color: #007042;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            flex: 1;
+            padding: 40px 60px;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #34495e;
+            margin-bottom: 25px;
+        }
+
+        .verification-text {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 30px;
+            max-width: 900px;
+        }
+
+        /* The Certificate Card Overlay */
+        .cert-card {
+            background: linear-gradient(135deg, #e3f2fd 0%, #e1f5fe 100%);
+            border-radius: 15px;
+            padding: 45px;
+            max-width: 850px;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .card-header h2 {
+            font-size: 24px;
+            color: #2c3e50;
+            text-transform: uppercase;
+        }
+
+        .print-link {
+            font-size: 14px;
+            color: #333;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .info-row {
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+
+        .info-row strong {
+            color: #2c3e50;
+            width: 150px;
+            display: inline-block;
+        }
+
+        /* Stats Blocks */
+        .stats-container {
+            display: flex;
+            gap: 20px;
+            margin-top: 35px;
+        }
+
+        .stat-box {
+            background: white;
+            border: 1px solid #2c3e50;
+            border-radius: 10px;
+            display: flex;
+            width: 280px;
+            overflow: hidden;
+        }
+
+        .stat-text {
+            padding: 15px;
+            flex: 1;
+        }
+
+        .stat-text p {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .stat-text small {
+            font-size: 11px;
+            color: #666;
+            line-height: 1.2;
+            display: block;
+        }
+
+        .stat-value {
+            width: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            font-weight: bold;
+            border-left: 1px solid #ccc;
+            background-color: #fff;
+        }
+
+        .btn-green-main {
+            background-color: #008a52;
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 40px;
+            font-size: 15px;
+        }
+
+        /* Decorative Illustration Placeholder */
+        .illustration {
+            position: absolute;
+            right: 40px;
+            bottom: 0;
+            width: 200px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="profile-section">
+            <div class="avatar">👤</div>
+            <div class="user-name">MUHAMMED SUHAIL M</div>
+            <div class="alison-id-small">Alison ID: 54767700</div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <h1>Your Learner Verification</h1>
+        
+        <p class="verification-text">
+            This is to verify that <strong>MUHAMMED SUHAIL M</strong> has completed the course 
+            <strong>Web Development - Advanced CSS3 Selectors and HTML5 Elements</strong> on Alison.
+        </p>
+
+        <section class="cert-card">
+            <div class="card-header">
+                <h2>MUHAMMED SUHAIL M</h2>
+                <a href="#" class="print-link" onclick="window.print()">🖨️ Print</a>
+            </div>
+
+            <div class="info-row"><strong>Alison ID:</strong> 54767700</div>
+            <div class="info-row"><strong>Course Completed:</strong> Web Development - Advanced CSS3 Selectors and HTML5 Elements</div>
+            <div class="info-row"><strong>Date of Completion:</strong> 10th March 2026</div>
+            <div class="info-row"><strong>Email:</strong> cse23500492@gmail.com</div>
+            <div class="info-row"><strong>Total Study Time:</strong> 5h 16m</div>
+
+            <div class="stats-container">
+                <div class="stat-box">
+                    <div class="stat-text">
+                        <p>Final Assessment Score:</p>
+                        <small>Alison courses require at least 80% to pass the final assessment</small>
+                    </div>
+                    <div class="stat-value">92%</div>
+                </div>
+
+                <div class="stat-box">
+                    <div class="stat-text">
+                        <p>CPD Hours Completed:</p>
+                        <small>CPD approved learning hours completed through this course</small>
+                    </div>
+                    <div class="stat-value" style="font-size: 20px;">4-6h</div>
+                </div>
+            </div>
+
+            <button onclick="downloadPDF()" class="btn-green-main">Download Certificate</button>
+
+            <div class="illustration">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="150" r="40" fill="#2c3e50" opacity="0.1" />
+                </svg>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function downloadPDF() {
+            const link = document.createElement("a");
+            link.href = "https://drive.google.com/drive/folders/1pvtHyY6eiLAD48k0fChPzRC0pEAwrG6T";      // Path to your PDF file
+            link.download = "suhail_certificate.pdf";  // Name of the file when saved
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+
+</body>
+</html>
